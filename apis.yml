@@ -1,24 +1,99 @@
 aid: lamudi
 name: Lamudi
-description: 'Lamudi is a company surfaced as a portfolio company of hv-capital and added to the API Evangelist
-  network as a stub for enrichment. Sector: marketplace. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Lamudi is an online real estate classifieds marketplace focused exclusively on emerging
+  markets, founded in 2013 and today operating consumer property portals in the Philippines
+  (lamudi.com.ph), Indonesia (lamudi.co.id) and Mexico (lamudi.com.mx). The platform lets buyers,
+  renters, sellers and landlords search and list houses, condominiums/apartments, land, commercial
+  space and offices, filtered by geography, property group and operation (buy/rent). Search results
+  pages carry area market statistics, interactive maps and nearby points of interest, alongside
+  country-specific features such as Philippine foreclosures and home-loan comparison, Indonesian KPR
+  mortgage simulators, and Mexican Infonavit-eligible listings and bank repossessions. Agencies and
+  developers publish inventory through the pro.lamudi.com professional portal. Lamudi operates as
+  part of LIFULL Connect, which supplies its legal notice, privacy policy and contact surface. Lamudi
+  publishes no public developer API, SDK or developer portal; its notable machine-readable surface is
+  a first-party llms.txt on each country site that documents the URL grammar of its search, new
+  development and project pages for AI agents.'
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://multimedia.lamudi.com/lamudi/common/images/favicon.ico
 url: https://raw.githubusercontent.com/api-evangelist/lamudi/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - hv-capital
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-operated-by: LIFULL Connect
+x-tier: profiled
+x-tier-reason: enriched-no-public-api
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Marketplace
+- Real Estate
+- Property
+- Classifieds
+- Emerging Markets
+- Philippines
+- Indonesia
+- Mexico
+- Listings
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: DomainSecurity
+  url: security/lamudi-domain-security.yml
+- type: Website
+  name: Lamudi Philippines
+  url: https://www.lamudi.com.ph/
+- type: Website
+  name: Lamudi Indonesia
+  url: https://www.lamudi.co.id/
+- type: Website
+  name: Lamudi Mexico
+  url: https://www.lamudi.com.mx/
+- type: Blog
+  name: Lamudi Journal (Philippines)
+  url: https://www.lamudi.com.ph/journal/
+- type: SignUp
+  name: Publish with Lamudi (agency/developer portal)
+  url: https://pro.lamudi.com/?country=ph
+- type: Login
+  name: Lamudi Pro login
+  url: https://pro.lamudi.com/login
+- type: Support
+  name: Contact us (LIFULL Connect)
+  url: https://www.lifullconnect.com/contact-us/
+- type: TermsOfService
+  name: Legal notice
+  url: https://www.lifullconnect.com/legal-notice-direct/
+- type: PrivacyPolicy
+  name: Privacy policy
+  url: https://www.lifullconnect.com/global-privacy-policy-region2/
+- type: LLMsTxt
+  name: llms.txt (Philippines)
+  url: llms/lamudi-ph-llms.txt
+- type: LLMsTxt
+  name: llms.txt (Indonesia)
+  url: llms/lamudi-id-llms.txt
+- type: LLMsTxt
+  name: llms.txt (Mexico)
+  url: llms/lamudi-mx-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
