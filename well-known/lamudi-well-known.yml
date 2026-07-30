@@ -1,0 +1,54 @@
+generated: '2026-07-19'
+method: searched
+source: live probe of Lamudi country marketplace hosts
+note: >-
+  Lamudi publishes no /.well-known/ discovery documents on any of its three
+  country marketplaces. Every /.well-known/ path probed returned 404. Note that
+  the legacy global landing page (lamudi.com) and the agent portal
+  (pro.lamudi.com) each answer 200 to ANY path with an identical SPA shell —
+  those are soft-404s, not documents, and are recorded as such rather than
+  harvested. Lamudi DOES publish a real /llms.txt on each country site
+  (captured in llms/); it is served as text/markdown, not from /.well-known/.
+  No pointer of type WellKnown or SecurityTxt is wired, because no such
+  document genuinely exists.
+hosts:
+  - host: https://www.lamudi.com.ph
+    documents:
+      - {path: /.well-known/security.txt, status: 404}
+      - {path: /.well-known/openid-configuration, status: 404}
+      - {path: /.well-known/oauth-authorization-server, status: 404}
+      - {path: /.well-known/api-catalog, status: 404}
+      - {path: /.well-known/ai-plugin.json, status: 404}
+      - {path: /llms.txt, status: 200, content_type: text/markdown, file: ../llms/lamudi-ph-llms.txt}
+      - {path: /robots.txt, status: 200, content_type: text/plain}
+  - host: https://www.lamudi.co.id
+    documents:
+      - {path: /.well-known/security.txt, status: 404}
+      - {path: /.well-known/openid-configuration, status: 404}
+      - {path: /.well-known/oauth-authorization-server, status: 404}
+      - {path: /.well-known/api-catalog, status: 404}
+      - {path: /.well-known/ai-plugin.json, status: 404}
+      - {path: /llms.txt, status: 200, content_type: text/markdown, file: ../llms/lamudi-id-llms.txt}
+      - {path: /robots.txt, status: 200, content_type: text/plain}
+  - host: https://www.lamudi.com.mx
+    documents:
+      - {path: /.well-known/security.txt, status: 404}
+      - {path: /.well-known/openid-configuration, status: 404}
+      - {path: /.well-known/oauth-authorization-server, status: 404}
+      - {path: /.well-known/api-catalog, status: 404}
+      - {path: /.well-known/ai-plugin.json, status: 404}
+      - {path: /llms.txt, status: 200, content_type: text/markdown, file: ../llms/lamudi-mx-llms.txt}
+      - {path: /robots.txt, status: 200, content_type: text/plain}
+  - host: https://pro.lamudi.com
+    note: agent/agency portal — SPA catch-all, every path returns an identical 9890-byte shell (soft-404)
+    documents:
+      - {path: /.well-known/security.txt, status: 200, soft_404: true}
+      - {path: /llms.txt, status: 200, soft_404: true}
+      - {path: /api/docs, status: 200, soft_404: true}
+  - host: https://lamudi.com
+    note: legacy global landing page — SPA catch-all, every path returns an identical 43182-byte shell (soft-404)
+    documents:
+      - {path: /.well-known/security.txt, status: 200, soft_404: true}
+      - {path: /.well-known/openid-configuration, status: 200, soft_404: true}
+      - {path: /.well-known/api-catalog, status: 200, soft_404: true}
+      - {path: /llms.txt, status: 200, soft_404: true}

@@ -1,0 +1,119 @@
+# Lamudi México
+
+> Portal inmobiliario líder en México. Encuentra casas, departamentos, terrenos y locales comerciales en venta y renta en todo el país.
+
+Lamudi México permite buscar propiedades filtrando por ubicación geográfica, tipo de propiedad y operación. Cada página de resultados incluye estadísticas de mercado de la zona, mapa interactivo con las propiedades y puntos de interés cercanos (transporte público, escuelas, hospitales). También cuenta con propiedades especiales como inmuebles elegibles para crédito Infonavit y remates bancarios.
+
+## Idiomas
+
+El sitio está disponible en español (predeterminado) e inglés. Las URLs en inglés llevan el prefijo `/en/`:
+
+- Español (predeterminado): `https://www.lamudi.com.mx/distrito-federal/casa/for-sale/`
+- Inglés: `https://www.lamudi.com.mx/en/distrito-federal/house/for-sale/`
+
+## Tipos de operación
+
+Los slugs de operación son iguales en ambos idiomas:
+
+- `for-sale` — En venta / For sale
+- `for-rent` — En renta / For rent
+
+## Grupos de propiedad
+
+| Español (predeterminado) | English (`/en/`) | Descripción |
+|--------------------------|-----------------|-------------|
+| `casa` | `house` | Casas: unifamiliares, en condominio, townhouses, quintas |
+| `departamento` | `apartment` | Departamentos: penthouses, lofts, dúplex, estudios |
+| `terreno` | `land` | Terrenos: lotes, ranchos, terrenos agrícolas |
+| `comercial` | `commercial` | Comercial: locales en plaza, naves industriales, hoteles |
+| `oficina` | `office` | Oficinas: consultorios médicos, edificios de oficinas |
+
+## Búsqueda de anuncios (SERP)
+
+URL: `https://www.lamudi.com.mx/{geo}/{tipo}/{operación}/`
+
+Se pueden encadenar múltiples niveles geográficos: `/{estado}/{municipio}/{tipo}/{operación}/`
+
+Cada SERP incluye:
+- Listado de propiedades con precio, superficie total y construida, recámaras y baños
+- Estadísticas de mercado: precio promedio por m², tendencias de precios y comparativas de la zona
+- Mapa interactivo con la ubicación exacta de cada propiedad
+- Puntos de interés cercanos: líneas de metro, autobús y transporte público próximos a la zona
+
+### Ejemplos de SERP de anuncios
+
+- [Casas en venta en CDMX](https://www.lamudi.com.mx/distrito-federal/casa/for-sale/): Casas en venta en Ciudad de México
+- [Casas en venta en Álvaro Obregón](https://www.lamudi.com.mx/distrito-federal/alvaro-obregon/casa/for-sale/): Casas en venta en la alcaldía Álvaro Obregón
+- [Departamentos en renta en CDMX](https://www.lamudi.com.mx/distrito-federal/departamento/for-rent/): Departamentos en renta en Ciudad de México
+- [Casas en venta en Jalisco](https://www.lamudi.com.mx/jalisco/casa/for-sale/): Casas en venta en Jalisco
+- [Casas en venta en Guadalajara](https://www.lamudi.com.mx/jalisco/guadalajara/casa/for-sale/): Casas en venta en Guadalajara
+- [Departamentos en renta en Guadalajara](https://www.lamudi.com.mx/jalisco/guadalajara/departamento/for-rent/): Departamentos en renta en Guadalajara
+- [Casas en venta en Nuevo León](https://www.lamudi.com.mx/nuevo-leon/casa/for-sale/): Casas en venta en Nuevo León
+- [Casas en venta en Monterrey](https://www.lamudi.com.mx/nuevo-leon/monterrey/casa/for-sale/): Casas en venta en Monterrey
+- [Departamentos en venta en Estado de México](https://www.lamudi.com.mx/mexico/departamento/for-sale/): Departamentos en venta en Estado de México
+- [Casas en venta en Puebla](https://www.lamudi.com.mx/puebla/casa/for-sale/): Casas en venta en Puebla
+- [Terrenos en venta en Querétaro](https://www.lamudi.com.mx/queretaro-arteaga/terreno/for-sale/): Terrenos en venta en Querétaro
+- [Locales comerciales en CDMX](https://www.lamudi.com.mx/distrito-federal/comercial/for-sale/): Locales y espacios comerciales en Ciudad de México
+
+## Búsqueda de nuevos desarrollos (SERP Proyectos)
+
+Los nuevos desarrollos son proyectos inmobiliarios en preventa o en construcción ofrecidos por desarrolladoras. Cada SERP de proyectos muestra nombre del desarrollo, desarrolladora, ubicación, tipos de unidades disponibles, precio desde y amenidades del proyecto.
+
+- [Nuevos desarrollos en México](https://www.lamudi.com.mx/newdevelopments/search/for-sale/): Todos los proyectos inmobiliarios en México en venta
+- [Nuevos desarrollos en CDMX](https://www.lamudi.com.mx/newdevelopments/search/distrito-federal/for-sale/): Proyectos en Ciudad de México
+- [Nuevos desarrollos en Jalisco](https://www.lamudi.com.mx/newdevelopments/search/baja-california/for-sale/): Proyectos en Baja California
+
+## Páginas de detalle de anuncios
+
+URL: `https://www.lamudi.com.mx/detalle/{id}/`
+
+Cada anuncio tiene una URL propia con información completa:
+- Precio, superficie total y construida, recámaras, baños y estacionamientos
+- Descripción completa y galería de fotos
+- Ubicación en mapa y puntos de interés cercanos (transporte, servicios)
+- Información del agente o inmobiliaria
+- Calculadora hipotecaria
+- Propiedades similares en la misma zona
+
+
+## Páginas de detalle de proyectos
+
+URL: `https://www.lamudi.com.mx/desarrollo/{id}/`
+
+Cada proyecto inmobiliario tiene su propia página con:
+- Nombre del desarrollo, desarrolladora y ubicación
+- Unidades disponibles: tipologías, superficies, precios y planos
+- Amenidades del conjunto (alberca, gimnasio, seguridad, etc.)
+- Galería de imágenes y renders
+- Formulario de contacto con el desarrollador
+
+## Propiedades especiales
+
+### Infonavit
+
+Propiedades elegibles para adquirirse con crédito Infonavit, exclusivo de México.
+
+- [Propiedades Infonavit](https://www.lamudi.com.mx/infonavit/): Búsqueda de inmuebles en venta elegibles para crédito Infonavit en toda la república
+- [Casas Infonavit en CDMX](https://www.lamudi.com.mx/distrito-federal/casa/for-sale/infonavit/): Casas para crédito Infonavit en Ciudad de México
+
+### Remates bancarios
+
+Propiedades en remate bancario (foreclosures).
+
+- [Remates bancarios — casas en CDMX](https://www.lamudi.com.mx/distrito-federal/foreclosures/casa/for-sale/): Casas en remate bancario en Ciudad de México
+- [Remates bancarios — departamentos en CDMX](https://www.lamudi.com.mx/distrito-federal/foreclosures/departamento/for-sale/?foreclosures=yes): Departamentos en remate bancario en CDMX
+
+## Ubicaciones principales
+
+Estructura: `/{estado}/{municipio}/{tipo}/{operación}/`
+
+| Estado | Slug |
+|--------|------|
+| Ciudad de México | `distrito-federal` |
+| Jalisco | `jalisco` |
+| Estado de México | `mexico` |
+| Nuevo León | `nuevo-leon` |
+| Puebla | `puebla` |
+| Querétaro | `queretaro-arteaga` |
+
+Municipios destacados: `guadalajara`, `monterrey`, `alvaro-obregon`, `benito-juarez`, `miguel-hidalgo`, `cuauhtemoc`, `tlalpan`, `coyoacan`, `naucalpan-de-juarez`, `ecatepec-de-morelos`.

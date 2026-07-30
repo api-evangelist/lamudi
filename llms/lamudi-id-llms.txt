@@ -1,0 +1,119 @@
+# Lamudi Indonesia
+
+> Portal properti terkemuka di Indonesia. Temukan rumah, apartemen, tanah, dan ruang komersial untuk dijual dan disewa di seluruh nusantara.
+
+Lamudi Indonesia memungkinkan pencarian properti berdasarkan lokasi, jenis properti, dan jenis transaksi. Setiap halaman hasil pencarian menampilkan statistik pasar, peta interaktif, dan fasilitas umum di sekitar lokasi. Tersedia juga kalkulator KPR (Kredit Pemilikan Rumah) untuk membantu perhitungan cicilan dari berbagai bank.
+
+## Bahasa
+
+Situs tersedia dalam dua bahasa. URL bahasa Inggris menggunakan awalan `/en/`:
+
+- Bahasa Indonesia (default): `https://www.lamudi.co.id/jual/bali/rumah/`
+- English: `https://www.lamudi.co.id/en/for-sale/bali/house/`
+
+## Kelompok properti
+
+| Bahasa Indonesia | English | Keterangan |
+|------------------|---------|------------|
+| `rumah` | `house` | Rumah: rumah kavling, townhouse, vila |
+| `apartemen` | `apartment` | Apartemen: kondominium, studio, loft, penthouse |
+| `tanah` | `land` | Tanah: kavling, tanah pertanian |
+| `komersial` | `commercial` | Komersial: kantor, ruko, gudang, hotel |
+
+## Jenis transaksi
+
+| Bahasa Indonesia | English |
+|------------------|---------|
+| `jual` | `for-sale` |
+| `sewa` | `for-rent` |
+
+## Pencarian anunsen (SERP)
+
+URL (Bahasa Indonesia): `https://www.lamudi.co.id/{transaksi}/{geo}/{tipe}/`
+URL (English): `https://www.lamudi.co.id/en/{operation}/{geo}/{type}/`
+
+Dapat dikombinasikan beberapa tingkat geografis: `/{transaksi}/{provinsi}/{kota}/{tipe}/`
+
+Setiap SERP mencakup:
+- Daftar properti dengan harga, luas bangunan, luas tanah, kamar tidur dan kamar mandi
+- Statistik pasar: harga rata-rata per m², tren harga, dan perbandingan kawasan
+- Peta interaktif dengan lokasi properti
+- Fasilitas terdekat: transportasi umum, sekolah, rumah sakit
+
+### Contoh SERP anunsen
+
+- [Rumah dijual di Bali](https://www.lamudi.co.id/jual/bali/rumah/): Rumah dijual di Bali
+- [Rumah dijual di Jakarta](https://www.lamudi.co.id/jual/jakarta/rumah/): Rumah dijual di Jakarta
+- [Apartemen dijual di Jakarta](https://www.lamudi.co.id/jual/jakarta/apartemen/): Apartemen dijual di Jakarta
+- [Rumah disewa di Jakarta](https://www.lamudi.co.id/sewa/jakarta/rumah/): Rumah disewa di Jakarta
+- [Rumah dijual di Jawa Timur](https://www.lamudi.co.id/jual/jawa-timur/rumah/): Rumah dijual di Jawa Timur
+- [Tanah dijual di Bali](https://www.lamudi.co.id/jual/bali/tanah/): Tanah dijual di Bali
+- [Apartemen disewa di Banten](https://www.lamudi.co.id/sewa/banten/apartemen/): Apartemen disewa di Banten
+- [Houses for sale in Bali](https://www.lamudi.co.id/en/for-sale/bali/house/): Houses for sale in Bali (English)
+- [Houses for sale in Jakarta](https://www.lamudi.co.id/en/for-sale/jakarta/house/): Houses for sale in Jakarta (English)
+
+## Pencarian proyek baru (SERP Proyek Baru)
+
+Proyek properti dalam tahap pre-sale atau siap huni dari pengembang.
+
+URL (Bahasa Indonesia): `https://www.lamudi.co.id/proyek-baru/{transaksi}/{geo}/{tipe}/`
+URL (English): `https://www.lamudi.co.id/en/new-developments/{operation}/{geo}/{type}/`
+
+- [Proyek baru dijual](https://www.lamudi.co.id/proyek-baru/jual/): Semua proyek baru dijual di Indonesia
+- [Proyek baru di Jakarta](https://www.lamudi.co.id/proyek-baru/jual/jakarta/rumah/): Proyek rumah baru di Jakarta
+- [New developments in Bali](https://www.lamudi.co.id/en/new-developments/for-sale/bali/house/): New developments for sale in Bali (English)
+
+## Pencarian proyek (SERP Proyek)
+
+Listing proyek dari pengembang dengan profil lengkap.
+
+URL (Bahasa Indonesia): `https://www.lamudi.co.id/proyek/{transaksi}/{geo}/{tipe}/`
+URL (English): `https://www.lamudi.co.id/en/projects/{operation}/{geo}/{type}/`
+
+- [Proyek di Jakarta](https://www.lamudi.co.id/proyek/jual/jakarta/rumah/): Proyek pengembang dijual di Jakarta
+- [Projects in Jakarta](https://www.lamudi.co.id/en/projects/for-sale/jakarta/house/): Developer projects for sale in Jakarta (English)
+
+## Halaman detail anunsen
+
+Setiap anunsen memiliki halaman sendiri dengan:
+- Detail lengkap: harga, luas bangunan, luas tanah, kamar tidur, kamar mandi, garasi dan fasilitas
+- Galeri foto
+- Lokasi di peta dan fasilitas terdekat
+- Informasi agen atau pengembang
+- Properti serupa di kawasan yang sama
+
+## Halaman detail proyek
+
+Setiap proyek pengembang memiliki halaman dengan:
+- Nama proyek, pengembang, dan lokasi
+- Unit tersedia: tipe, luas, harga, dan denah
+- Fasilitas (kolam renang, gym, keamanan, dll.)
+- Galeri foto dan render
+- Formulir kontak pengembang
+
+## KPR (Kredit Pemilikan Rumah)
+
+Kalkulator cicilan KPR dan perbandingan pinjaman dari berbagai bank Indonesia.
+
+- [Kalkulator KPR](https://www.lamudi.co.id/kpr/): Simulasi cicilan KPR dari berbagai bank
+- [KPR BCA](https://www.lamudi.co.id/kpr/bca/): Simulasi KPR Bank BCA
+- [KPR BTN](https://www.lamudi.co.id/kpr/btn/): Simulasi KPR Bank BTN
+- [KPR Mandiri](https://www.lamudi.co.id/kpr/mandiri/): Simulasi KPR Bank Mandiri
+- [KPR BRI](https://www.lamudi.co.id/kpr/bri/): Simulasi KPR Bank BRI
+
+## Lokasi utama
+
+Struktur: `/{transaksi}/{provinsi}/{kota}/{tipe}/`
+
+| Provinsi | Slug |
+|----------|------|
+| Jakarta | `jakarta` |
+| Bali | `bali` |
+| Jawa Timur | `jawa-timur` |
+| Jawa Tengah | `jawa-tengah` |
+| Jawa Barat | `jawa-barat` |
+| Banten | `banten` |
+| Sumatra Utara | `sumatra-utara` |
+| Lampung | `lampung` |
+| Kalimantan Timur | `kalimantan-timur` |
+| Sulawesi Selatan | `sulawesi-selatan` |

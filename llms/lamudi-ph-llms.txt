@@ -1,0 +1,111 @@
+# Lamudi Philippines
+
+> The Philippines' leading real estate portal. Find houses, condominiums, apartments, commercial spaces and land for sale and rent across the country.
+
+Lamudi Philippines allows searching for properties by location, property type and operation. Each search results page includes market statistics, an interactive map and nearby points of interest. It also features a home loans calculator and foreclosed properties.
+
+## Property groups
+
+- `house` — Houses: single-family houses
+- `condo` — Condominiums: condos, studios, lofts, penthouses
+- `apartment` — Apartments
+- `commercial` — Commercial: offices, retail spaces, service offices, warehouses
+- `land` — Land: residential lots, commercial lots, agricultural lots, beach lots
+
+## Operations
+
+- `buy` — For sale
+- `rent` — For rent
+
+## Listing search (SERP)
+
+URL: `https://www.lamudi.com.ph/{operation}/{geo}/{type}/`
+
+Multiple geographic levels can be combined: `/{operation}/{region}/{city}/{type}/`
+
+Each SERP includes:
+- Listings with price, floor area, bedrooms and bathrooms
+- Market statistics: average price per sqm, price trends and area comparisons
+- Interactive map with exact property locations
+- Nearby points of interest: public transport, schools, hospitals
+
+### Listing SERP examples
+
+- [Houses for sale in Metro Manila](https://www.lamudi.com.ph/buy/metro-manila/house/): Houses for sale in Metro Manila
+- [Condos for sale in Metro Manila](https://www.lamudi.com.ph/buy/metro-manila/condo/): Condominiums for sale in Metro Manila
+- [Houses for rent in Metro Manila](https://www.lamudi.com.ph/rent/metro-manila/house/): Houses for rent in Metro Manila
+- [Houses for sale in Cavite](https://www.lamudi.com.ph/buy/cavite/house/): Houses for sale in Cavite
+- [Houses for sale in Cebu](https://www.lamudi.com.ph/buy/cebu/house/): Houses for sale in Cebu
+- [Condos for sale in Cebu](https://www.lamudi.com.ph/buy/cebu/condo/): Condominiums for sale in Cebu
+- [Land for sale in Laguna](https://www.lamudi.com.ph/buy/laguna/land/): Lots and land for sale in Laguna
+- [Houses for sale in Batangas](https://www.lamudi.com.ph/buy/batangas/house/): Houses for sale in Batangas
+- [Commercial spaces in Metro Manila](https://www.lamudi.com.ph/buy/metro-manila/commercial/): Commercial properties for sale in Metro Manila
+- [Apartments for rent in Metro Manila](https://www.lamudi.com.ph/rent/metro-manila/apartment/): Apartments for rent in Metro Manila
+
+## New developments SERP
+
+Pre-selling and ready-for-occupancy projects from developers.
+
+URL: `https://www.lamudi.com.ph/new-developments/{operation}/{geo}/{type}/`
+
+- [New developments for sale](https://www.lamudi.com.ph/new-developments/buy/): All pre-selling and RFO projects in the Philippines
+- [New developments in Metro Manila](https://www.lamudi.com.ph/new-developments/buy/metro-manila/house/): Houses and condos for sale in Metro Manila
+- [New developments in Cavite](https://www.lamudi.com.ph/new-developments/buy/cavite/house/): Houses for sale in Cavite
+
+## Projects search SERP
+
+Developer-curated project listings with full project profiles.
+
+URL: `https://www.lamudi.com.ph/projects/search/{operation}/{geo}/{type}/`
+
+- [Projects in Metro Manila](https://www.lamudi.com.ph/projects/search/buy/metro-manila/house/): Developer projects for sale in Metro Manila
+- [Projects in Cavite](https://www.lamudi.com.ph/projects/search/buy/cavite/house/): Developer projects for sale in Cavite
+
+## Listing detail pages
+
+Each listing has its own page with:
+- Full details: price, floor area, lot area, bedrooms, bathrooms, parking and amenities
+- Photo gallery
+- Map location and nearby points of interest
+- Agent or developer contact information
+- Similar properties in the area
+
+## Project detail pages
+
+Each development project has its own page with:
+- Project name, developer and location
+- Available units: types, floor areas, prices and floor plans
+- Amenities (pool, gym, security, etc.)
+- Photo gallery and renders
+- Contact form for the developer
+
+## Special features
+
+### Foreclosed properties
+
+Bank-foreclosed properties available for sale.
+
+- [Foreclosed properties](https://www.lamudi.com.ph/buy/foreclosures/): Bank-owned properties for sale across the Philippines
+
+### Home loans calculator
+
+Bank loan options and mortgage calculator for property buyers in the Philippines.
+
+- [Home loans](https://www.lamudi.com.ph/home-loans): Compare home loan offers from Philippine banks and compute monthly amortisation
+
+## Key locations
+
+Structure: `/{operation}/{region}/{city}/{type}/`
+
+| Region / Province | Slug |
+|-------------------|------|
+| Metro Manila | `metro-manila` |
+| Cebu | `cebu` |
+| Cavite | `cavite` |
+| Laguna | `laguna` |
+| Batangas | `batangas` |
+| Bulacan | `bulacan` |
+| Rizal | `rizal` |
+| Iloilo | `iloilo` |
+| Davao del Norte | `davao-del-norte` |
+| Pangasinan | `pangasinan` |
