@@ -13,6 +13,17 @@ description: 'Lamudi is an online real estate classifieds marketplace focused ex
   publishes no public developer API, SDK or developer portal; its notable machine-readable surface is
   a first-party llms.txt on each country site that documents the URL grammar of its search, new
   development and project pages for AI agents.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
