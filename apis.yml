@@ -50,7 +50,7 @@ modified: '2026-07-19'
 tags:
 - Company
 - Marketplace
-- Real-Estate
+- Real Estate
 - Property
 - Classifieds
 - Emerging Markets
@@ -69,6 +69,7 @@ tags_raw:
 - Indonesia
 - Mexico
 - Listings
+- Real-Estate
 apis: []
 maintainers:
 - FN: Kin Lane
